@@ -1,0 +1,128 @@
+*{
+    font-family: 'Poppins';
+    box-sizing: border-box;
+}
+html {
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+}
+body {
+    margin: 0;
+}
+
+#sparkys {
+    color: white;
+    margin: 10vh 0 0;
+    padding: 0;
+    text-align: center;
+    font-size: 7em;
+}
+#loginWidget {
+    width: 450px;
+    margin:  9vh auto;
+    text-align: center;
+    font-family: 'Poppins';
+    border-radius: 15px;
+    -webkit-box-shadow: 0 0 10px #0b551f;
+    -moz-box-shadow: 0 0 10px #0b551f;
+    box-shadow: 0 0 10px #0b551f;
+}
+#loginWidget > h1 {
+    margin: 0;
+    padding: 2px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+#loginWidget form {
+    background-color: #EEE;
+    border: 1px solid #DDD;
+    border-radius: 0 0 15px 15px;
+}
+#loginWidget div.stack {
+    margin: 1em 0;
+}
+div.ui-state-error {
+    padding: 4px 0;
+}
+div.pageWidget {
+    width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+.ui-widget-header {
+    color: white;
+    background: #F5A0D5;
+    border-color: #d98dbc;
+}
+.stack{
+    padding: 5px 0;
+}
+input[type=text],
+input[type=password]{
+    display: block;
+    margin: 0 auto;
+    width: 55%;
+    border-radius: 12px;
+}
+input[type=submit], #createUserLink{
+    width: 30%;
+    border-radius: 15px;
+    background: #DD64E0;
+    color: white;
+    font-weight: 400;
+    border-color: #be56c1;
+}
+input[type=submit]:hover, #createUserLink:hover{
+    color: white;
+    background: #c35bc6;
+    border-color: #a74caa;
+}
+#createUserLink {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 6px 10px;
+    border: 1px solid #be56c1;
+    width: auto;
+    font-size: 0.8em;
+    -webkit-box-shadow: 0 0 10px #0b551f;
+    -moz-box-shadow: 0 0 10px #0b551f;
+    box-shadow: 0 0 10px #0b551f;
+    border-radius: 10px;
+}
+#layer1{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    height: 500px;
+    background: linear-gradient(30deg, #9ff587, #70af60);
+    background-color: #8FDD7A;
+    border-bottom-left-radius: 90% 50%;
+    left: 0;
+}
+#layer2{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -2;
+    height: 750px;
+    background: linear-gradient(30deg, #7ABF67, #1e3418);
+    border-bottom-left-radius: 90% 30%;
+    left: 0;
+}
+.design{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0 100px #47763b;
+}
+label {
+    display: block;
+    width: 55%;
+    margin: 0 auto;
+    text-align: left;
+}
+

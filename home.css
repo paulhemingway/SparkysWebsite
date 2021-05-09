@@ -1,0 +1,147 @@
+
+#cover{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    bottom: 2px;
+    z-index: -1;
+    text-align: center;
+}
+
+#mainPic {
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+
+#slogan {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-transform: UPPERCASE;
+    font-weight: 200;
+    font-size: 2em;
+    line-height: 1.2em;
+    letter-spacing: .15em;
+}
+#iceCreamText{
+    font-size: 1.8em;
+    font-weight: 400;
+}
+
+.galleryImage{
+    width: 100%;
+    height: 33.3%;
+    margin: 0;
+    padding: 0;
+    margin: 10px 0;
+    -webkit-filter: grayscale(70%);
+    -webkit-box-shadow: 0 0 20px #606060;
+    -moz-box-shadow: 0 0 20px #606060;
+    box-shadow: 0 0 20px #606060;
+    transition: all 0.7s;
+}
+#galleryDiv {
+    width: 75%;
+    margin: 0 auto 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    flex: 33%;
+    text-align: center;
+    line-height: 0;
+    margin: 10px;
+}
+
+.photoList li {
+    display: inline;
+}
+
+.row img:hover{
+    transform: scale(1.05);
+    -webkit-filter: grayscale(0%);
+}
+
+@media (max-width: 858px){
+    #galleryDiv{
+        width: 90%;
+    }
+}
+
+#about {
+    height: 720px;
+    display: flex;
+    margin: 4vh auto 8vh;
+    width: 80%;
+}
+
+#leftAbout{
+    flex: 33%;
+}
+#leftAbout p {
+    font-size: 1.4em;
+    text-indent: 2em;
+    padding: 25px;
+    font-weight: 600;
+    color: var(--red);
+}
+#rightAbout{
+    flex: 67%;
+}
+/* https://faq.dailymotion.com/hc/en-us/articles/360022841393-How-to-preserve-the-player-aspect-ratio-on-a-responsive-page 
+
+Used this to know how to keep the aspect ratio of the iframe
+*/
+#videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; 
+}
+iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 1422px;
+    max-height: 800px;
+}
+.aboutColumn {
+    height: 100%;
+}
+
+#about p {
+    padding: 10px;
+}
+
+@media (max-width: 1800px){
+    #leftAbout p {
+        font-size: 1.2em;
+    }
+}
+@media (max-width: 1552px){
+    #leftAbout p {
+        font-size: 1em;
+    }
+}
+@media (max-width: 1300px){
+    #about{
+        display: block;
+        height: auto;
+    }
+    #leftAbout {
+        padding-bottom: 30px;
+    }
+    #leftAbout p {
+        font-size: 1.4em;
+    }
+    iframe {
+        top: 0;
+    }
+}

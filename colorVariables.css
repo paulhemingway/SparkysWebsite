@@ -1,0 +1,10 @@
+/* This file is to create variables for the specific colors to stay consistent */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
+:root {
+    --lightgreen: #8FDD7A;
+    --darkgreen: #7ABF67;
+    --darkergreen: #283e22;
+    --purple: #DD64E0;
+    --pink: #F5A0D5;
+    --red: #E05A48;
+}

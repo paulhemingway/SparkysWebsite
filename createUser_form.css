@@ -1,0 +1,102 @@
+
+
+*{
+    font-family: 'Poppins';
+    box-sizing: border-box;
+    margin: 0;
+}
+#sparkys {
+    color: white;
+    margin: 4vh 0 0;
+    padding: 0;
+    text-align: center;
+    font-size: 7em;
+}
+#loginWidget {
+    width: 450px;
+    margin:  0 auto;
+    text-align: center;
+    font-family: 'Poppins';
+    border-radius: 15px;
+}
+#loginWidget > h1 {
+    margin: 0;
+    padding: 2px;
+}
+#loginWidget form {
+    background-color: #EEE;
+    border: 1px solid #DDD;
+    border-radius: 0 0 15px 15px;
+}
+#loginWidget div.stack {
+    margin: 1em 0;
+}
+div.ui-state-error {
+    padding: 4px 0;
+}
+.ui-widget-header {
+    color: white;
+    background: #F5A0D5;
+    border-color: #d98dbc;
+}
+
+input[type=text],
+    input[type=password],
+    input[type=date],
+    input[type=email]
+{
+    display: block;
+    margin: 0 auto;
+    width: 55%;
+    border-radius: 12px;
+}
+input[type=submit]{
+    width: 30%;
+    border-radius: 15px;
+    background: #DD64E0;
+    color: white;
+    font-weight: 400;
+    border-color: #be56c1;
+}
+input[type=submit]:hover{
+    color: white;
+    background: #c35bc6;
+    border-color: #a74caa;
+}
+#layer1{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    height: 500px;
+    background: linear-gradient(30deg, #9ff587, #70af60);
+    background-color: #8FDD7A;
+    border-bottom-left-radius: 90% 50%;
+    left: 0;
+}
+#layer2{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -2;
+    height: 750px;
+    background: linear-gradient(30deg, #7ABF67, #1e3418);
+    border-bottom-left-radius: 90% 30%;
+    left: 0;
+}
+.design{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0 100px #47763b;
+}
+label {
+    display: block;
+    width: 55%;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 0.8em;
+    
+}
+
